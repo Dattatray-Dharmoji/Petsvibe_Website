@@ -1,0 +1,714 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  color: #000;
+  font-weight: 500;
+  background-color: rgba(217, 217, 217, 0.6509803922);
+}
+
+.section {
+  margin-top: 10rem;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0rem 1.5rem;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 1.3rem 2.2rem;
+}
+.btn_outlined {
+  border: 2px solid #003459;
+  border-radius: 10rem;
+  color: #003459;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn_outlined:hover {
+  background-color: #000;
+  color: #fff; /* Inverts colors on hover */
+}
+.btn_bg {
+  background-color: #003459;
+  color: #fff;
+  border-radius: 10rem;
+  border: 2px solid #003459;
+  margin-left: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 15px;
+}
+.btn_bg:hover {
+  background-color: rgb(0, 81.797752809, 140);
+  border-color: rgb(0, 81.797752809, 140);
+}
+
+.button {
+  background-color: #4CAF50; /* Green background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 15px 32px; /* Padding */
+  text-align: center; /* Centered text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Make the button inline element */
+  font-size: 16px; /* Increase font size */
+  margin: 4px 2px; /* Add some space around the button */
+  cursor: pointer; /* Pointer/hand icon on hover */
+  border-radius: 8px; /* Rounded corners */
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.nav {
+  width: 100%;
+  height: 12rem;
+}
+.nav_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_left {
+  display: flex;
+  align-items: center;
+}
+.nav_logo {
+  margin-right: 3rem;
+}
+.nav_logo img {
+  max-width: 10rem;
+}
+.nav_list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.nav_item {
+  margin: 0rem 0.8rem;
+}
+.nav_link {
+  text-decoration: none;
+  color: #042339;
+  font-weight: 700;
+  padding: 5px;
+  font-size: larger;
+}
+
+.section {
+  width: 100%;
+}
+.section_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.section_header_p {
+  color: #000;
+}
+.section_header_h2 {
+  color: #a77c33;
+}
+.section_header_h3 {
+  color: #003459;
+  font-weight: 700;
+  font-size: 30px;
+}
+.section_header_h4 {
+  color: #003459;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  grid-gap: 2rem;
+}
+
+.card {
+  padding: 1rem;
+  background-color: rgba(245, 223, 198, 0.7294117647);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.card_img {
+  width: 100%;
+}
+.card_body_title {
+  font-size: 1.5rem;
+  margin: 0.6rem 0rem;
+}
+.card_body_details {
+  width: 100%;
+  margin-bottom: 0.7rem;
+  display: flex;
+}
+.card_body_gender {
+  font-size: 1.4rem;
+  margin-left: 1rem;
+}
+.card_body_age {
+  font-size: 1rem;
+}
+.card_body_price {
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+}
+.card_body_gift {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #FCEED5;
+  display: flex;
+  font-size: 1.4rem;
+  align-items: center;
+}
+.card_body_gift_icon {
+  margin-right: 1rem;
+}
+.card_body_gift_p {
+  font-weight: 600;
+}
+
+.banner {
+  width: 100%;
+  background-image: url(/css/images/Banner\ .png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 40px;
+}
+.banner_wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.banner_main_title {
+  padding: 50px;
+}
+.banner_p {
+  padding: 10px;
+  margin-bottom: 1rem;
+}
+.banner_content {
+  text-align: center;
+}
+
+.banner2 {
+  width: 100%;
+  background-image: url(/css/images/Banner\ .png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 40px;
+}
+.banner2_wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.banner2_main_title {
+  padding: 50px;
+}
+.banner2_p {
+  padding: 10px;
+  margin-bottom: 1rem;
+}
+.banner2_content {
+  text-align: center;
+}
+
+.logos_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 3rem;
+}
+
+#modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Darkened background for contrast */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#modalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow for a floating effect */
+  transform: scale(1.05); /* Slight scaling for 3D effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+#modalContent:hover {
+  transform: scale(1.07); /* Slightly enlarges on hover */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* Darker shadow on hover */
+}
+
+#modalContent h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Light shadow for title */
+}
+
+#modalContent input[type=email],
+#modalContent input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); /* Inner shadow for 3D effect */
+  transition: box-shadow 0.3s ease;
+}
+
+#modalContent input[type=email]:focus,
+#modalContent input[type=password]:focus {
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on focus */
+  outline: none;
+}
+
+#modalContent button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 3D shadow for button */
+  transition: background-color 0.3s, transform 0.2s ease; /* Smooth transition */
+}
+
+#modalContent button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Lift effect on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+#modalContent p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666;
+}
+
+#modalContent p span {
+  color: #007BFF;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#modalContent p span:hover {
+  color: #0056b3;
+}
+
+.google-signin {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.google-signin img {
+  width: 40px;
+  height: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Soft shadow for icon */
+}
+
+#profileContainer {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+  top: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Shadow for profile container */
+}
+
+/* Popup styles */
+.popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Centered Popup Content */
+.popup-content {
+  background-color: rgba(246, 246, 246, 0.6784313725);
+  margin: auto; /* Center horizontally */
+  padding: 20px; /* Increased padding for better aesthetics */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle 3D effect */
+  border: 2px solid #000000; /* Border color */
+  width: 90%; /* Width responsive */
+  max-width: 400px; /* Maximum width for larger screens */
+  position: relative; /* To position close button correctly */
+  top: 30%; /* Center vertically */
+}
+
+/* Close button styles */
+.close {
+  color: #121df3;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#closePopupBtn {
+  background-color: #007BFF; /* Primary color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Vertical and horizontal padding */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition effects */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  margin-top: 20px; /* Space above the button */
+  margin-left: 130px;
+}
+
+/* Hover effect */
+#closePopupBtn:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Focus effect */
+#closePopupBtn:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Custom focus shadow */
+}
+
+.booking-page {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 7px rgb(14, 14, 14);
+  background-image: url("../css/images/appointmentmodel.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.form-label {
+  color: #e2e8f0;
+}
+
+.form-input,
+select {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.booking-header {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: "Helvetica", sans-serif;
+}
+
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #46546b;
+  margin-bottom: 0.5rem;
+}
+
+.form-input,
+select {
+  font-size: 1.5rem;
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  outline: none;
+  transition: border 0.3s ease;
+  background-color: #edf2f7;
+}
+
+.form-input:focus,
+select:focus {
+  border-color: #5a67d8;
+  background-color: #ffffff;
+}
+
+.form-submit {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #5a67d8;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form-submit:hover {
+  background-color: #4c51bf;
+  transform: translateY(-2px);
+}
+
+.form-submit:active {
+  transform: translateY(1px);
+}
+
+@media (max-width: 480px) {
+  .booking-page {
+    padding: 1rem;
+  }
+  .booking-header {
+    font-size: 1.5rem;
+  }
+  .form-input,
+  .form-submit {
+    font-size: 1rem;
+  }
+}
+header {
+  background: linear-gradient(to right, rgb(255, 211, 99), rgb(255, 129, 3)); /* Light gradient */
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 100px; /* Adjust logo size as needed */
+  margin-bottom: 10px;
+}
+
+.header-title {
+  color: #ffffff;
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.appointments-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping to next line if necessary */
+  justify-content: flex-start; /* Align cards to the start */
+  padding: 20px;
+  gap: 20px; /* Space between each card */
+  width: 100%; /* Full width to allow multiple cards */
+}
+
+.appointment-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  flex: 1 1 250px; /* Allows flexible resizing with minimum width */
+  max-width: 300px; /* Optional max width to control card size */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.appointment-detail {
+  margin: 5px 0;
+}
+
+.pet-picture {
+  width: 100px;
+  height: auto;
+  margin: 10px 0;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.button-form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.approve-button, .reject-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.approve-button {
+  background-color: #5a67d8;
+  color: white;
+}
+
+.approve-button:hover {
+  background-color: #4c51bf;
+}
+
+.reject-button {
+  background-color: #e53e3e;
+  color: white;
+}
+
+.reject-button:hover {
+  background-color: #c53030;
+}
+
+/* General Modal Styles */
+.modal {
+  display: flex; /* Use flex to center the modal */
+  justify-content: center;
+  align-items: center;
+  position: fixed; /* Position it fixed to the viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay background */
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #ffffff; /* Solid white background for the modal */
+  border-radius: 10px; /* Rounded corners */
+  padding: 2rem; /* Padding inside the modal */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect for depth */
+  width: 90%; /* Width of the modal */
+  max-width: 600px; /* Max width for larger screens */
+}
+
+/* Modal Title */
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333333; /* Dark text for contrast */
+  margin-bottom: 1rem; /* Margin below the title */
+}
+
+/* Modal Input Fields */
+.modal-input {
+  width: 100%; /* Full width for inputs */
+  padding: 0.5rem; /* Padding inside inputs */
+  border: 1px solid #cccccc; /* Light gray border */
+  border-radius: 5px; /* Slightly rounded corners */
+  margin-bottom: 1rem; /* Space between inputs */
+}
+
+/* Modal Button Styles */
+.modal-submit,
+.modal-cancel {
+  background-color: #5a67d8; /* Primary color */
+  color: white; /* White text */
+  padding: 0.5rem 1rem; /* Padding for buttons */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.modal-submit:hover,
+.modal-cancel:hover {
+  background-color: #4c51bf; /* Darker shade on hover */
+}
+
+/* General Form Group Styles */
+.form-group {
+  display: flex; /* Use flex for alignment */
+  flex-direction: column; /* Stack label and input vertically */
+  margin-bottom: 1.5rem; /* Space between form groups */
+}
+
+/* Modal Button Container */
+.modal-buttons {
+  display: flex; /* Use flexbox to align buttons */
+  justify-content: space-between; /* Space between buttons */
+  margin-top: 1rem; /* Space above the button container */
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../css/images/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header_wrapper_container {
+  width: 100%;
+  height: calc(100vh - 12rem);
+  display: flex;
+  align-items: center;
+}
+.header_wrapper {
+  width: 30%;
+}
+.header_main_title {
+  margin-bottom: 2rem;
+}
+.header_p {
+  margin-bottom: 4rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
